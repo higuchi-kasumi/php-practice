@@ -116,14 +116,14 @@ echo $taxInPrice;
 function distinguishNum($num)
 {
     if($num % 2 === 0){
-        echo $num . 'は偶数です。' . "\n";
+        return $num . 'は偶数です。' . "\n";
     }else{
-        echo $num . 'は奇数です。' . "\n";
+        return $num . 'は奇数です。' . "\n";
     }
 }
 
-distinguishNum(11);
-distinguishNum(24);
+echo distinguishNum(11);
+echo distinguishNum(24);
 
 // Q13 関数とswitch文
 function evaluateGrade($result)
