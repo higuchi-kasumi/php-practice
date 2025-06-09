@@ -59,6 +59,31 @@ foreach ($personalInfos as $x => $y){
 }
 
 // 問題３
+$personalInfos = [
+    [
+        'name' => 'Aさん',
+        'mail' => 'aaa@mail.com',
+        'tel'  => '09011112222'
+    ],
+    [
+        'name' => 'Bさん',
+        'mail' => 'bbb@mail.com',
+        'tel'  => '08033334444'
+    ],
+    [
+        'name' => 'Cさん',
+        'mail' => 'ccc@mail.com',
+        'tel'  => '09055556666'
+    ],
+];
+
+$ageList = [25, 30, 18];
+
+foreach ($personalInfos as $x => &$y) {
+    $y['age'] = $ageList[$x];
+}
+
+var_dump ($personalInfos);
 
 
 // Q3 オブジェクト-1
@@ -68,4 +93,3 @@ foreach ($personalInfos as $x => $y){
 
 
 // Q5 定義済みクラス
-?>
