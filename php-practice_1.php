@@ -108,7 +108,9 @@ function calcTaxInPrice($price)
     echo $price . '円の商品の税込価格は' . $price * 1.1 . '円です。';
 }
 
-calcTaxInPrice($price);
+$taxInPrice = calcTaxInPrice($price);
+
+echo $taxInPrice;
 
 // Q12 関数とif文
 function distinguishNum($num)
