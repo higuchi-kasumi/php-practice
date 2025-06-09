@@ -144,8 +144,6 @@ function evaluateGrade($result)
     }
 }
 
-$message = evaluateGrade('A');
-echo $message;
+echo evaluateGrade('A');
 
-$message = evaluateGrade('D');
-echo $message;
+echo evaluateGrade('D');
