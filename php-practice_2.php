@@ -135,3 +135,11 @@ $datetime = new DateTime();
 $datetime->modify('-1 month');
 
 echo $datetime->format('Y-m-d');
+
+// 問題２
+$datetime = new DateTime('2025-06-10');
+$datetime2 = new DateTime('1992-04-25');
+
+$diff = $datetime->diff($datetime2);
+
+echo 'あの日から'.$diff->days.'日経過しました。';
